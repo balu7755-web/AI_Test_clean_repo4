@@ -1,25 +1,18 @@
-# cleancode/sum.py
+# cleancode/__init__.py
+# cleancode/sum_two_numbers.py
 from typing import Union
-class Calculator:
-    """Simple calculator for sum operations."""
-    def add(self, a: float, b: float) -> Union[float, str]:
-        """Add two numbers and return the result as a string or an error message."""
+class SumTwoNumbers:
+    def __init__(self):
+        pass
+    def sum(self, num1: Union[int, float], num2: Union[int, float]) -> Union[int, float]:
         try:
-            return f"The sum is {a + b}."
+            return num1 + num2
         except TypeError:
-            return "Error: Both inputs must be numbers."
-        except Exception as e:
-            return f"An unexpected error occurred: {e}"
+            raise ValueError("Input must be integers or floats")
 def main() -> None:
-    """Entry point for standalone execution."""
-    calc = Calculator()
-    try:
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        print(calc.add(num1, num2))
-    except ValueError as e:
-        print(f"Invalid input: {e}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+    if __name__ == "__main__":
+        s = SumTwoNumbers()
+        result = s.sum(5.0, 3.0)
+        print(f"The sum is: {result}")
 if __name__ == "__main__":
     main()
