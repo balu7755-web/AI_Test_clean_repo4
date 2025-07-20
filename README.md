@@ -1,49 +1,34 @@
-Here is the professional README.md file for the Python project 'cleancode':
+Here is a professional README.md for the Python project 'cleancode':
 
 **📖 Overview**
-CleanCode: A Simple Python Program to Calculate the Sum of Two Numbers
-=====================================================
-
-The CleanCode project is a simple Python program designed to demonstrate best practices in coding and software development. This program provides a straightforward solution for calculating the sum of two numbers, making it an excellent starting point for beginners or a refresher for experienced developers.
+The `cleancode` project provides a simple Python program to calculate the sum of two numbers. This project demonstrates best practices in coding and follows Clean Code principles.
 
 **⚙️ Installation Instructions**
-Installation
--------------
+To install and run this project, follow these steps:
 
-To use the CleanCode program, you'll need to have Python installed on your system. You can download and install Python from the official [Python website](https://www.python.org/downloads/).
-
-Once you've installed Python, simply clone this repository or download the code as a ZIP file and extract it to a directory of your choice.
+1. Clone the repository: `git clone https://github.com/your-username/cleancode.git`
+2. Install dependencies: `pip install -r requirements.txt` (assuming you have Python 3.x installed)
+3. Run the program: `python main.py`
 
 **🚀 Usage Examples**
-Usage
------
-
-To use the CleanCode program, follow these steps:
-
-1. Run the program using `python cleancode.py`
-2. Enter two numbers when prompted: `num1` and `num2`
-3. The program will calculate and display the sum of the two input numbers
-
-Here's an example usage:
+To use this project, simply run the `main.py` file and provide two numbers as command-line arguments. For example:
 ```
-$ python cleancode.py
-Enter num1: 5
-Enter num2: 7
-The sum is: 12
+$ python main.py 10 20
+Sum: 30
 ```
+Alternatively, you can also call the function directly from your Python script or environment:
+```python
+from cleancode import add_numbers
 
+result = add_numbers(10, 20)
+print(result)  # Output: 30
+```
 **✅ Testing Information**
-Testing
---------
-
-The CleanCode program includes automated testing using the built-in `unittest` module in Python. To run the tests, execute the following command:
-```bash
-$ python -m unittest test_cleancode.py
+The project includes unit tests using Pytest. You can run the tests by executing:
 ```
-This will report any errors or failures, ensuring that your code is functioning correctly.
+$ pytest
+```
+This will verify that the program works correctly for various input scenarios.
 
 **📜 License**
-License
--------
-
-The CleanCode program is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify, distribute, and use this code for personal or commercial purposes. However, please keep in mind that any modifications or changes you make should be properly attributed.
+The `cleancode` project is licensed under the MIT License, which allows free use and modification of the code. Please see the [LICENSE](LICENSE) file for more information.
