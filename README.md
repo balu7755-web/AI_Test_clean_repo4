@@ -1,41 +1,36 @@
-Here is a professional README.md for the Python project 'cleancode':
+Here is the README.md for the 'cleancode' Python project:
 
-📖 Overview
-================
+📖 **Overview**
+The `cleancode` project is a simple calculator implemented in Python. This project aims to provide a basic arithmetic calculator that can perform addition, subtraction, multiplication, and division operations.
 
-Cleancode is a simple Python program designed to count the number of words in a given text file. This project aims to provide a straightforward and efficient solution for counting word frequencies.
+⚙️ **Installation Instructions**
+To install and use the `cleancode` calculator, follow these steps:
 
-⚙️ Installation Instructions
-==========================
+1. Clone the repository: `git clone https://github.com/your-username/cleancode.git`
+2. Navigate to the project directory: `cd cleancode`
+3. Install required dependencies using pip: `pip install -r requirements.txt`
+4. Run the calculator script: `python calculator.py`
 
-1. Clone this repository using `git clone https://github.com/your-username/cleancode.git`
-2. Install the required dependencies by running `pip install -r requirements.txt`
-3. Run the program using `python cleancode.py` (assuming you have Python installed)
+🚀 **Usage Examples**
+Here are some examples of how you can use the `cleancode` calculator:
 
-🚀 Usage Examples
-================
-
-### Counting word frequencies in a file:
-
-1. Save your text file with words you want to count.
-2. Run the program: `python cleancode.py <your-file-name.txt>`
-3. The output will display the word frequency for each unique word.
-
-### Specifying a custom threshold:
-
-1. Pass a threshold value as an argument: `python cleancode.py <your-file-name.txt> 5`
-2. The program will only count words that appear at least 5 times in the file.
-
-✅ Testing Information
-=====================
-
-To run tests, use the following command:
+1. Perform basic arithmetic operations:
 ```
-pytest tests/test_cleancode.py
+$ python calculator.py
+Enter a math problem (e.g., 2+3*4):
+Result: 14
 ```
-This will execute all test cases and provide a summary of the results.
+2. Calculate percentages:
+```
+$ python calculator.py
+Enter a percentage calculation (e.g., 25% of 100):
+Result: 25.0
+```
+✅ **Testing Information**
+The `cleancode` project includes unit tests using the Pytest framework to ensure that the calculator functions correctly.
 
-📜 License
-==========
+1. Run the test suite: `pytest`
+2. View test results: `pytest -v`
 
-Cleancode is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+📜 **License**
+The `cleancode` project is licensed under the MIT License.
